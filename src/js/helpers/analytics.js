@@ -12,7 +12,7 @@ const init = (session, action) => {
     userAgent: navigator.userAgent,
   };
 
-  otkAnalytics = new OTKAnalytics(otkanalyticsData);
+  otkAnalytics = new OTKAnalytics(otkanalyticsData, { loggingUrl: 'hlg.dev.tokbox.com/qa/logging/ClientEvent' });
 
   const sessionInfo = {
     sessionId: session.sessionId,
